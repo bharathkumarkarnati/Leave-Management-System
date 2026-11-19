@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reset password - LeaveFlow</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="auth">
+  <aside class="auth-side">
+    <a class="brand" href="index.html"><span class="brand-mark">LF</span>LeaveFlow</a>
+    <div><h2>Reset your password</h2><p>Confirm your email and employee ID, then choose a new password.</p>
+      <ul class="auth-points"><li>✔ Real-time leave balances</li><li>✔ Instant approval notifications</li><li>✔ Team leave calendar</li></ul></div>
+    <small style="opacity:.7;position:relative">IMS academic project</small>
+  </aside>
+  <main class="auth-main"><div class="auth-card">
+    <h1>Forgot password?</h1><p class="muted">Enter your email and employee ID (for example EMP001).</p>
+    <form id="forgotForm" novalidate>
+      <label class="field">Email address<input id="email" type="email" required></label>
+      <label class="field">Employee ID<input id="empCode" placeholder="EMP001" required></label>
+      <label class="field">New password<div class="pw-wrap"><input id="password" type="password" placeholder="Min. 6 characters" required><button type="button" data-toggle="password">Show</button></div></label>
+      <p id="err" class="form-error"></p>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Reset password</button>
+    </form>
+    <p class="auth-alt"><a href="login.html">← Back to log in</a></p>
+  </div></main>
+</div>
+<script src="js/store.js"></script><script src="js/common.js"></script><script src="js/auth.js"></script>
+</body></html>

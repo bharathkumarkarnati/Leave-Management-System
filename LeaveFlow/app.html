@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - LeaveFlow</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark">LF</span>LeaveFlow</a>
+    <nav id="nav"></nav>
+    <div class="side-bottom">
+      <div class="side-user" id="sideUser"></div>
+      <button class="nav-item" id="logoutBtn"></button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn"></button>
+      <div class="top-title" id="topTitle">Dashboard</div>
+      <div class="top-right">
+        <span class="top-date" id="topDate"></span>
+        <button class="icon-btn" id="themeBtn" title="Toggle theme"></button>
+        <div class="drop-wrap">
+          <button class="icon-btn" id="bellBtn" title="Notifications"><span id="bellIcon"></span><span class="dot hidden" id="bellDot">0</span></button>
+          <div class="dropdown" id="bellDrop"></div>
+        </div>
+        <button class="icon-btn" id="avatarBtn" style="padding:0;border:0" title="My profile"></button>
+      </div>
+    </header>
+    <div class="content" id="view"></div>
+    <footer class="footer"><span>LeaveFlow · Leave Management System</span><span id="footRight">IMS academic project</span></footer>
+  </main>
+</div>
+
+<div class="overlay hidden" id="overlay">
+  <div class="modal">
+    <div class="modal-head"><div><h2 id="mTitle"></h2><p id="mSub"></p></div><button class="x" id="mClose" type="button">×</button></div>
+    <form id="mForm" novalidate><div id="mFields"></div><p id="mError" class="form-error"></p>
+      <div class="modal-actions"><button type="button" class="btn btn-ghost" id="mCancel">Cancel</button><button type="submit" class="btn btn-primary" id="mSubmit">Save</button></div>
+    </form>
+  </div>
+</div>
+<script src="js/store.js"></script><script src="js/common.js"></script><script src="js/app.js"></script>
+</body>
+</html>

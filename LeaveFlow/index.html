@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeaveFlow - Leave Management System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+<div class="nav-in">
+  <a class="brand" href="index.html"><span class="brand-mark">LF</span>LeaveFlow</a>
+  <nav class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#roles">Roles</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeBtn" title="Toggle theme"></button>
+    <a class="btn btn-ghost" id="navLogin" href="login.html">Log in</a>
+    <a class="btn btn-primary" id="navRegister" href="register.html">Get started</a>
+  </div>
+</div>
+</header>
+
+<section class="hero">
+  <div>
+    <span class="pill">Leave management for modern teams</span>
+    <h1>Apply, approve and track leave <span>in one place</span></h1>
+    <p class="lead">Employees apply in seconds. Managers approve with one click. Balances, calendars and reports update instantly.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" id="heroBtn" href="login.html">Open dashboard</a>
+      <a class="btn btn-ghost btn-lg" href="login.html">Try the demo</a>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock-stats">
+      <div><b>18</b><small>Days left</small></div>
+      <div><b>02</b><small>Pending</small></div>
+      <div><b>05</b><small>Approved</small></div>
+    </div>
+    <div class="mock-row"><span><b>Annual Leave</b><br><small>24 Nov – 25 Nov</small></span><span class="badge Pending">Pending</span></div>
+    <div class="mock-row"><span><b>Sick Leave</b><br><small>12 Oct</small></span><span class="badge Approved">Approved</span></div>
+    <div class="mock-row"><span><b>Personal Leave</b><br><small>02 Sep</small></span><span class="badge Rejected">Rejected</span></div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <h2>Everything you need to manage leave</h2>
+  <p class="sub">Simple for employees, powerful for administrators.</p>
+  <div class="feat-grid">
+    <div class="feat"><div class="ico" id="f1"></div><h3>Quick leave applications</h3><p>Pick a type and dates. Balance and overlap checks run automatically.</p></div>
+    <div class="feat"><div class="ico" id="f2"></div><h3>One-click approvals</h3><p>Administrators approve or reject requests with remarks.</p></div>
+    <div class="feat"><div class="ico" id="f3"></div><h3>Team calendar</h3><p>See who is away this week or month at a glance.</p></div>
+    <div class="feat"><div class="ico" id="f4"></div><h3>Live dashboards</h3><p>Charts and counters update when requests change.</p></div>
+    <div class="feat"><div class="ico" id="f5"></div><h3>Leave balances</h3><p>Yearly allowance, used and pending days.</p></div>
+    <div class="feat"><div class="ico" id="f6"></div><h3>Role-based access</h3><p>Employees and administrators have separate access.</p></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <h2>How it works</h2>
+  <p class="sub">Three steps from request to approval.</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Register</h3><p>Create your account with your email and department.</p></div>
+    <div class="step"><div class="num">2</div><h3>Apply</h3><p>Submit a leave request with dates and a reason.</p></div>
+    <div class="step"><div class="num">3</div><h3>Get notified</h3><p>Your administrator reviews it and you see the decision.</p></div>
+  </div>
+</section>
+
+<section class="section" id="roles">
+  <h2>Built for two roles</h2>
+  <p class="sub">Choose how you sign in.</p>
+  <div class="feat-grid" style="grid-template-columns:repeat(2,1fr)">
+    <div class="feat"><h3>Employee</h3><p>Apply for leave, track requests, check balances and view the calendar.</p></div>
+    <div class="feat"><h3>Administrator</h3><p>Approve requests, manage employees and view reports.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+<h2>Ready to simplify leave management?</h2>
+<p>Create an account in under a minute.</p>
+<a class="btn btn-lg" href="register.html">Get started</a>
+</section>
+
+<footer class="site-footer">LeaveFlow · Leave Management System · IMS academic project</footer>
+
+<script src="js/store.js"></script>
+<script src="js/common.js"></script>
+<script>
+["zap","check","calendar","chart","pie","shield"].forEach(function(n, i) {
+    $("f" + (i + 1)).innerHTML = icon(n, 22);
+});
+</script>
+
+</body>
+</html>
